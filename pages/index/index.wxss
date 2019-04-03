@@ -1,0 +1,96 @@
+.content {
+  background: #f4f4f4;
+}
+
+.searchBox {
+  padding: 0 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-bottom: 40rpx;
+  background: #fff;
+}
+
+.searchBox .searchIcon {
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  left: 66rpx;
+  top: 10rpx;
+}
+
+.searchBox input {
+  width: 604rpx;
+  height: 66rpx;
+  border-radius: 40rpx;
+  background: #ebebeb 100%;
+  font-size: 26rpx;
+  padding-left: 80rpx;
+}
+
+.searchBox .notice {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.searchUl {
+  display: flex;
+  padding: 0 40rpx 20rpx;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+
+.searchLi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchLi image {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.searchLi text {
+  font-size: 28rpx;
+  color: #b2b2b2;
+  margin-top: 16rpx;
+}
+
+.issueBox {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40rpx;
+  background: #fff;
+  padding-top: 32rpx;
+}
+
+.issueBox .warn {
+  text-align: center;
+  color: #181818;
+  font-size: 34rpx;
+  font-family: Arial;
+  margin-bottom: 18rpx;
+}
+
+.issueBox view {
+  font-size: 28rpx;
+  color: #5e5e5e;
+  text-align: center;
+  margin-bottom: 38rpx;
+}
+
+.issueBox view text {
+  color: #f4c46b;
+}
+
+.issueBox button {
+  background: #28b8a1;
+  color: #fff;
+  font-size: 34rpx;
+  border-radius: 14rpx;
+  width: 100%;
+  margin-bottom: 38rpx;
+}

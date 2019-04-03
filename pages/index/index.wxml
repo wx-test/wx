@@ -1,0 +1,24 @@
+<view class="content">
+  <!-- 搜索模块 -->
+  <view class='searchBox'>
+    <image class='searchIcon' src='../images/search.png'></image>
+    <input placeholder='搜索症状 / 疾病 / 药品 / 医生 / 科室'></input>
+    <image class='notice' src='../images/advices.png'></image>
+  </view>
+  <!-- 找医生模块 -->
+  <view class='searchUl'>
+    <view class='searchLi' wx:for='{{searchLists}}' wx:key='index'>
+      <image src='{{item.imgSrc}}'></image>
+      <text>{{item.disc}}</text>
+    </view>
+  </view>
+  <!-- 快速提问模块 -->
+  <view class='issueBox'>
+    <text class='warn'>身体小问题，快速问医生</text>
+    <view>
+      三甲医院主治及以上医生，已解答
+      <text>120万</text> 个问题
+    </view>
+    <button>快速提问</button>
+  </view>
+</view>
