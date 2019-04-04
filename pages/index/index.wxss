@@ -94,3 +94,109 @@
   width: 100%;
   margin-bottom: 38rpx;
 }
+
+swiper {
+  background: #fff;
+  margin: 16rpx 0;
+  height: 340rpx;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.teaSpeak {
+  background: #fff;
+  height: 50rpx;
+  padding: 0 40rpx;
+}
+
+.teaTop {
+  display: flex;
+  justify-content: space-between;
+  line-height: 50rpx;
+  padding: 16rpx 0;
+}
+
+.teaTop .left {
+  color: #181818;
+  font-size: 28rpx;
+}
+
+.teaTop .right {
+  color: #8c8c8c;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.teaTop .right image {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.teaLi {
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 16rpx 0;
+  border-top: 1px solid #f4f4f4;
+}
+
+.teaLi image {
+  width: 218rpx;
+  height: 148rpx;
+  margin-left: 36rpx;
+}
+
+.teaDesc {
+  width: 454rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.teaDesc .mainTit {
+  color: #101010;
+  font-size: 30rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.teaDesc .secTit {
+  color: #8c8c8c;
+  font-size: 28rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.teaDesc view {
+  display: flex;
+  flex-direction: row;
+  font-size: 24rpx;
+}
+
+.teaDesc view .nowPrice {
+  color: #28b8a1;
+  margin-right: 10rpx;
+}
+
+.teaDesc view .oldPrice {
+  color: #8c8c8c;
+  margin-right: 10rpx;
+  text-decoration: line-through;
+}
+
+.teaDesc view .join {
+  color: #8c8c8c;
+}

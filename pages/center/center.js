@@ -1,16 +1,27 @@
-const app = getApp();
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    //判断小程序的API，回调，参数，组件等是否在当前版本可用。
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    userInfo:null,
   },
-  onLoad: function () {
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
   },
-  getUserInfo(info) {
-    const userInfo = info.detail.userInfo;
-    console.log(userInfo);
+  onGotUserInfo(e) {
+    let userInfo =  e.detail.userInfo;
+    console.log(userInfo)
     this.setData({
-      userInfo,
+      userInfo:userInfo,
     })
   },
+  about: function () {
+    wx.navigateTo({
+      url: '../../pages/about/about',
+    })
+  }
 })

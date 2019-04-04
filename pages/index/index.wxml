@@ -21,4 +21,34 @@
     </view>
     <button>快速提问</button>
   </view>
+  <!-- banner图模块 -->
+  <swiper autoplay="true" interval="2000" indicator-dots>
+    <block wx:for="{{banenrUrls}}" wx:key='index'>
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 医师讲堂 -->
+  <view class='teaSpeak'>
+    <view class='teaTop'>
+      <text class='left'>医师讲堂</text>
+      <view class='right'>
+        更多
+        <image src='../images/arrow.png'></image>
+      </view>
+    </view>
+    <view class='teaLi' wx:for="{{teacherList}}" wx:key='index'>
+      <view class='teaDesc'>
+        <text class='mainTit'>{{item.mainTit}}</text>
+        <text class='secTit'>{{item.secTit}}</text>
+        <view>
+          <text class='nowPrice'>{{item.nowPrice}}</text>
+          <text class='oldPrice'>{{item.oldPrice}}</text>
+          <text class='join'>{{item.join}}人参与</text>
+        </view>
+      </view>
+      <image src='{{item.image}}'></image>
+    </view>
+  </view>
 </view>

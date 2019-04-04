@@ -1,14 +1,16 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/brand/brand",
-    "pages/cart/cart",
-    "pages/center/center"
+    "pages/index/index", 
+    "pages/brand/brand", 
+    "pages/cart/cart",   
+    "pages/center/center",   
+    "pages/home-details/home-details", 
+    "pages/pay/pay",  
+    "pages/about/about"  
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "国标检索",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
