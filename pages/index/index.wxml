@@ -7,7 +7,7 @@
   </view>
   <!-- 找医生模块 -->
   <view class='searchUl'>
-    <view class='searchLi' wx:for='{{searchLists}}' wx:key='index'>
+    <view class='searchLi' wx:for='{{searchLists}}' wx:key='index' bindtap="readBook" data-disc='{{item.disc}}'>
       <image src='{{item.imgSrc}}'></image>
       <text>{{item.disc}}</text>
     </view>

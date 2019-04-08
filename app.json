@@ -6,7 +6,8 @@
     "pages/center/center",   
     "pages/home-details/home-details", 
     "pages/pay/pay",  
-    "pages/about/about"  
+    "pages/about/about",
+    "pages/read/read"  
   ],
   "window": {
     "backgroundTextStyle": "light",

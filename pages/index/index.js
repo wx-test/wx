@@ -56,6 +56,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+  
   },
+
+  readBook(option){
+    let disc = option.currentTarget.dataset.disc;
+    if(disc == '找医生'){
+      wx.navigateTo({
+        url: '../read/read',
+      })
+    }
+  }
 })
