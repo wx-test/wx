@@ -4,26 +4,36 @@ Page({
    * 页面的初始数据
    */
   data: {
-    searchLists:[
-      { imgSrc:'../images/doctor.png', disc:'找医生'},
-      { imgSrc:'../images/drug.png', disc:'找药品'},
-      { imgSrc:'../images/illness.png', disc:'查疾病'},
-      { imgSrc:'../images/blackboard.png', disc:'医师讲堂'},
+    searchLists: [{
+        imgSrc: '../images/doctor.png',
+        disc: '找医生'
+      },
+      {
+        imgSrc: '../images/drug.png',
+        disc: '找药品'
+      },
+      {
+        imgSrc: '../images/illness.png',
+        disc: '查疾病'
+      },
+      {
+        imgSrc: '../images/blackboard.png',
+        disc: '医师讲堂'
+      },
     ],
-    banenrUrls:[
+    banenrUrls: [
       "../images/banner1.jpg",
       "../images/banner2.jpg",
       "../images/banner3.jpg",
       "../images/banner4.jpg",
     ],
-    teacherList:[
-      {
-        mainTit:'隐形正畸的危害？30岁再进行正畸还来得及吗？',
-        secTit:'杨半仙·深圳市香港大学深圳医院·主治医师',
-        nowPrice:'¥9.00',
-        oldPrice:'¥39.00',
-        join:'888',
-        image:'../images/banner1.jpg'
+    teacherList: [{
+        mainTit: '隐形正畸的危害？30岁再进行正畸还来得及吗？',
+        secTit: '杨半仙·深圳市香港大学深圳医院·主治医师',
+        nowPrice: '¥9.00',
+        oldPrice: '¥39.00',
+        join: '888',
+        image: '../images/banner1.jpg'
       },
       {
         mainTit: '秃顶为什么没有被自然选择淘汰？',
@@ -55,15 +65,23 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-  
+  onLoad: function(options) {
+
   },
 
-  readBook(option){
+  readBook(option) {
     let disc = option.currentTarget.dataset.disc;
-    if(disc == '找医生'){
+    if (disc == '找医生') {
       wx.navigateTo({
         url: '../read/read',
+      })
+    } else if (disc == '找药品') {
+      wx.navigateTo({
+        url: '../switch/switch',
+      })
+    } else if (disc == '查疾病') {
+      wx.navigateTo({
+        url: '../touch/touch',
       })
     }
   }
